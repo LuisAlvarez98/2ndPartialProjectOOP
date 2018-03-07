@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "Actor.h"
 using namespace std;
 
 class Pelicula {
@@ -12,8 +13,15 @@ class Pelicula {
 		int cantidadActores;
 		int listaActores[10];
 	public:
+		//Constructor default
 		Pelicula() {
-
+			this->listaActores[10] = {};
+			this->numPeli = 0;
+			this->year = 0;
+			this->titulo = " ";
+			this->duracion = 0;
+			this->genero = " ";
+			this->cantidadActores = 0;
 		}
 		//Metodos de acceso y modificadores
 		void setNumPeli(int numPeli) {
@@ -49,7 +57,13 @@ class Pelicula {
 		int getCantidadActores() {
 			return this->cantidadActores;
 		}
+		//End metodos de acceso y modificacion
 		int getListaActores(int index) {
-			return 0;
+			return this->listaActores[index];
 		}
-};
+		//Falta agregar actor
+		bool agregarActor(int id) {
+			
+			return true;
+		}
+};	
