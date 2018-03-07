@@ -1,5 +1,4 @@
 #pragma once
-#include <string>
 #include "Hora.h"
 using namespace std;
 
@@ -9,6 +8,12 @@ class Funcion {
 		int numPeli;
 		Hora hora;
 	public:
+		//Constructor default
+		Funcion() {
+			this->cveFuncion = ' ';
+			this->numPeli = 0;
+			this->hora = Hora();
+		}
 		//Constructor FALTA DEFAULT
 		Funcion(string cveFuncion, int numPeli, Hora hora) {
 			this->cveFuncion = cveFuncion;
@@ -33,5 +38,9 @@ class Funcion {
 		}
 		Hora getHora() {
 			return this->hora;
+		}
+		//Muestra
+		void muestra() {
+			cout << this->cveFuncion << " " << this->numPeli << " "<< this->hora.getHh << ":" << this->hora.getMm << "\n";
 		}
 };

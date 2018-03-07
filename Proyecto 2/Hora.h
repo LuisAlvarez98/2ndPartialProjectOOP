@@ -1,14 +1,19 @@
 #pragma once
+#include <iostream>
+#include <string>
+using namespace std;
+
 class Hora {
 	private:
 		int hh;
 		int mm;
 	public:
+		//Constructor Default
 		Hora() {
 			this->hh = 0;
 			this->mm = 0;
 		}
-		//Constructor FALTA DEFAULT
+		//Constructor
 		Hora(int hh, int mm) {
 			this->hh = hh;
 			this->mm = mm;
@@ -25,5 +30,9 @@ class Hora {
 		}
 		int getMm() {
 			return this->mm;
+		}
+		//Muestra
+		void muestra() {
+			cout << this->hh << ":" << this->mm << "\n";
 		}
 };

@@ -6,7 +6,12 @@ class Actor {
 		int id;
 		string nombre;
 	public:
-		//Constructor FALTA DEFAULT
+		//Constructor default
+		Actor() {
+			this->id = 0;
+			this->nombre = " ";
+		}
+		//Constructor
 		Actor(int id, string nombre) {
 			this->id = id;
 			this->nombre = nombre;
@@ -24,5 +29,8 @@ class Actor {
 		inline string getNombre() {
 			return this->nombre;
 		}
-		
+		//Muestra
+		void muestra() {
+			cout << this->id << " " << this->nombre << "\n";
+		}
 };
