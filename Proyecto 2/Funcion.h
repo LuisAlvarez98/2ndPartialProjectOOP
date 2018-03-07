@@ -41,6 +41,6 @@ class Funcion {
 		}
 		//Muestra
 		void muestra() {
-			cout << this->cveFuncion << " " << this->numPeli << " "<< this->hora.getHh << ":" << this->hora.getMm << "\n";
+			//cout << this->cveFuncion << " " << this->numPeli << " "<< this->hora.getHh << ":" << this->hora.getMm << "\n";
 		}
 };

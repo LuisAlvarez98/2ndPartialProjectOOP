@@ -1,6 +1,5 @@
 #pragma once
 #include <string>
-#include "Actor.h"
 using namespace std;
 
 class Pelicula {
@@ -61,9 +60,16 @@ class Pelicula {
 		int getListaActores(int index) {
 			return this->listaActores[index];
 		}
-		//Falta agregar actor
+		//Falta si se duplica
 		bool agregarActor(int id) {
-			
+			bool flag;
+			if (cantidadActores > 10) {
+				flag = false;
+			}else{
+				listaActores[cantidadActores] = id;
+				cantidadActores++;
+				flag = true;
+			}
 			return true;
 		}
 };	
