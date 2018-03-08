@@ -58,7 +58,6 @@ class Pelicula {
 		}
 		//End metodos de acceso y modificacion
 		int getListaActores(int index) {
-			listaActores = new int[10];
 			return this->listaActores[index];
 		}
 		//Falta si se duplica
