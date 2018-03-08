@@ -10,11 +10,11 @@ class Pelicula {
 		int duracion;
 		string genero;
 		int cantidadActores;
-		int listaActores[10];
+		int *listaActores;
 	public:
 		//Constructor default
 		Pelicula() {
-			this->listaActores[10] = {};
+			this->listaActores = new int[10];
 			this->numPeli = 0;
 			this->year = 0;
 			this->titulo = " ";
@@ -58,6 +58,7 @@ class Pelicula {
 		}
 		//End metodos de acceso y modificacion
 		int getListaActores(int index) {
+			listaActores = new int[10];
 			return this->listaActores[index];
 		}
 		//Falta si se duplica
@@ -70,6 +71,6 @@ class Pelicula {
 				cantidadActores++;
 				flag = true;
 			}
-			return true;
+			return flag;
 		}
 };	
