@@ -60,4 +60,7 @@ class Funcion {
 		void setTitulo(string titulo) {
 			this->titulo = titulo;
 		}
+		string getTitulo() {
+			return this->titulo;
+		}
 };

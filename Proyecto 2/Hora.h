@@ -33,6 +33,6 @@ class Hora {
 		}
 		//Muestra
 		void muestra() {
-			cout << this->hh << ":" << this->mm << "\n";
+			cout << this->hh << ":" << this->mm << " ";
 		}
 };
