@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <iostream>
 using namespace std;
 
 class Pelicula {
@@ -62,14 +63,15 @@ class Pelicula {
 		}
 		//Falta si se duplica
 		bool agregarActor(int id) {
-			bool flag;
-			if (cantidadActores > 10) {
+			bool flag = true;
+			if (cantidadActores >= 10) {
 				flag = false;
-			}else{
+			}else if (flag = true) {
 				listaActores[cantidadActores] = id;
-				cantidadActores++;
-				flag = true;
 			}
+			
+			cantidadActores++;
+			
 			return flag;
 		}
 };	
