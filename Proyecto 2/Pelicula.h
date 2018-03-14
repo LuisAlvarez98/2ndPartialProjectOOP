@@ -63,15 +63,22 @@ class Pelicula {
 		}
 		//Falta si se duplica
 		bool agregarActor(int id) {
-			bool flag = true;
+			bool flag = true, duplicado = false;
+
 			if (cantidadActores >= 10) {
 				flag = false;
 			}else if (flag = true) {
-				listaActores[cantidadActores] = id;
+				for (int i = 0; i < cantidadActores; i++) {
+					if (id == listaActores[i]) {
+						duplicado = true;
+					}
+				}
+				if (!duplicado) {
+					listaActores[cantidadActores] = id;
+					cantidadActores++;
+				}
 			}
-			
-			cantidadActores++;
-			
 			return flag;
 		}
+		
 };	
