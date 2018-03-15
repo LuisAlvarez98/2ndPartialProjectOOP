@@ -61,19 +61,24 @@ class Pelicula {
 		int getListaActores(int index) {
 			return this->listaActores[index];
 		}
-		//Falta si se duplica
-		bool agregarActor(int id) {
+		bool agregarActor(int id) 
+		{
+			int i;
 			bool flag = true, duplicado = false;
-
-			if (cantidadActores >= 10) {
+			if (cantidadActores >= 10) 
+			{
 				flag = false;
-			}else if (flag = true) {
-				for (int i = 0; i < cantidadActores; i++) {
-					if (id == listaActores[i]) {
+			}else if (flag = true) 
+			{
+				for (i = 0; i < cantidadActores; i++)
+				{
+					if (id == listaActores[i]) 
+					{
 						duplicado = true;
 					}
 				}
-				if (!duplicado) {
+				if (!duplicado) 
+				{
 					listaActores[cantidadActores] = id;
 					cantidadActores++;
 				}

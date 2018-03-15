@@ -1,6 +1,5 @@
 #pragma once
 #include "Hora.h"
-#include "Pelicula.h"
 using namespace std;
 
 class Funcion {
