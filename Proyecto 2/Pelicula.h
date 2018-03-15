@@ -75,12 +75,14 @@ class Pelicula {
 					if (id == listaActores[i]) 
 					{
 						duplicado = true;
+						flag = false;
 					}
 				}
 				if (!duplicado) 
 				{
 					listaActores[cantidadActores] = id;
 					cantidadActores++;
+					flag = true;
 				}
 			}
 			return flag;
