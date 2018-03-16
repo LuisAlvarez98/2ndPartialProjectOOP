@@ -51,8 +51,8 @@ class Funcion {
 		}
 		//Muestra
 		void muestra() {
-			cout << "Clave" << " " << " Titulo" << " " << "Sala" << "" << "Hora" << "\n";
-			cout << cveFuncion << " " << titulo <<  " " << sala << " ";
+			cout <<"Clave: " << cveFuncion << ", " << "Titulo: " << titulo <<  ", " << "Sala: " << sala << ", ";
+			cout << "Hora: ";
 			hora.muestra();
 			cout << "\n";
 		}
